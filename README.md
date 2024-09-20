@@ -23,7 +23,7 @@
     ├──3.jpg
 ``` 
 
-2. Generate a csv file including the metadata.
+2. Generate a `metadata.csv` file including the metadata.
 
 | Image  | Ethnicity        | Sex |    Age|  DR|
 | ------------- | ------------------ |-------------|------------|-----|
@@ -55,10 +55,9 @@ docker pull yukunzhou/diffuser_docker
 Please substitute the `{Absolute_path}` with the path to `traindata` folder
 ```
 docker run --gpus all -it -v {Absolute_path}:/app/diffusers/Global_DM -v {Absolute_path}/diffusion1.5:/app/diffusers/examples/text_to_image/diffusion1.5 yukunzhou/diffuser_docker
-
 ```
 
-The process will generate a diffusion1.5 folder in `{Absolute_path}` path. The model weights will be saved there.
+The process will generate a `diffusion1.5` folder in `{Absolute_path}` path. The model weights will be saved there.
 
 
 ### Citation
