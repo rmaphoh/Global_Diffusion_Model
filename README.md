@@ -41,8 +41,6 @@ If you have not installed Docker on your machine. Please follow [official instru
 
 ### Run the docker
 
-To fine tune RETFound on your own data, follow these steps:
-
 
 1. Download the docker
 
@@ -52,12 +50,13 @@ docker pull yukunzhou/diffuser_docker
 
 2. Run it
 
-Please substitute the `{Absolute_path}` with the path to `traindata` folder
+Please substitute the `{Absolute_path}` with the path to `traindata` folder.
 ```
-docker run --gpus all -it -v {Absolute_path}:/app/diffusers/Global_DM -v {Absolute_path}/diffusion1.5:/app/diffusers/examples/text_to_image/diffusion1.5 yukunzhou/diffuser_docker
+docker run --gpus all -it -v {Absolute_path}:/app/diffusers/Global_DM yukunzhou/diffuser_docker
 ```
+e.g.`docker run --gpus all -it -v /home/yukun:/app/diffusers/Global_DM yukunzhou/diffuser_docker`
 
-The process will generate a `diffusion1.5` folder in `{Absolute_path}` path. The model weights will be saved there.
+The process will generate a `diffusion1.5`,`diffusion2`, and `sdxl` folder in `{Absolute_path}` path. The model weights will be saved there.
 
 
 ### Citation
