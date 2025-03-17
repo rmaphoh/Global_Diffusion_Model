@@ -9,6 +9,17 @@
 ### News
 
 - 2024/09: Internal testing starting.
+- 2025/03: Metadata update.
+
+
+### Hardware requirements
+
+- A consumer-grade GPU (~16GB) is essential for model training. We have tested the docker with [multiple GPUs](https://docs.google.com/spreadsheets/d/1PIajcnnW9xhQ85XJVHh3sgvDcdrGk6AYFYzsXcJiC3k/edit?usp=sharing). 
+
+
+### Data requirements
+
+- Please include around 1k-5k images. The docker running will take around 1-2 days. 
 
 
 
@@ -25,11 +36,7 @@
 
 2. Generate a `metadata.csv` file including the metadata.
 
-| Image  | Ethnicity        | Sex |    Age|  DR|
-| ------------- | ------------------ |-------------|------------|-----|
-| 1.jpg      | British     |     female  |    62        |  mild diabetic retinopathy   |
-| 2.jpg        | Chinese  |     female        |    71        |  moderate diabetic retinopathy   |
-| 3.jpg        |       Indian        |     male        |       52     |  no diabetic retinopathy   |
+The example and column dictionary can be found [here](https://docs.google.com/spreadsheets/d/1wJPJfBJxTCCVcGCEbWiC5m3EjxeQLSIn/edit?usp=sharing&ouid=115097033631735657188&rtpof=true&sd=true).
 
 
 
@@ -57,6 +64,7 @@ docker run --gpus all -it -v {Absolute_path}:/app/diffusers/Global_DM yukunzhou/
 e.g.`docker run --gpus all -it -v /home/yukun:/app/diffusers/Global_DM yukunzhou/diffuser_docker`
 
 The process will generate a `diffusion1.5`,`diffusion2`, and `sdxl` folder in `{Absolute_path}` path. The model weights will be saved there.
+
 
 
 ### Citation
