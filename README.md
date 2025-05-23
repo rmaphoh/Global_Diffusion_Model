@@ -36,7 +36,21 @@
 
 2. Generate a `metadata.csv` file including the metadata.
 
-The example and column dictionary can be found [here](https://docs.google.com/spreadsheets/d/1wJPJfBJxTCCVcGCEbWiC5m3EjxeQLSIn/edit?usp=sharing&ouid=115097033631735657188&rtpof=true&sd=true).
+- If a variable is missing / not known, then leave that cell BLANK.
+
+- If you don’t have ANY metadata for that image, then only the ‘Image’ column would be filled in.
+
+- Save the metadata.csv in the same path as “traindata” folder
+
+```
+├──traindata
+    ├──1.jpg
+    ├──2.jpg
+    ├──3.jpg
+├──metadata.csv   
+``` 
+
+An example and column dictionary can be found [here](https://docs.google.com/spreadsheets/d/1wJPJfBJxTCCVcGCEbWiC5m3EjxeQLSIn/edit?usp=sharing&ouid=115097033631735657188&rtpof=true&sd=true).
 
 
 
