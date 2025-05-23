@@ -19,7 +19,7 @@
 
 ### Data requirements
 
-- Please include around 1k-5k images. The docker running will take around 1-2 days. 
+- Please include around 1k-20k images. The docker running will take around 1-2 days. 
 
 
 
