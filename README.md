@@ -50,7 +50,7 @@
 ├──metadata.csv   
 ``` 
 
-An example and column dictionary can be found [here](https://docs.google.com/spreadsheets/d/1wJPJfBJxTCCVcGCEbWiC5m3EjxeQLSIn/edit?usp=sharing&ouid=115097033631735657188&rtpof=true&sd=true).
+An example and column dictionary can be found [here](https://docs.google.com/spreadsheets/d/1wJPJfBJxTCCVcGCEbWiC5m3EjxeQLSIn/edit?usp=sharing&ouid=115097033631735657188&rtpof=true&sd=true). A total of 2K-20K images are suggested.
 
 
 
@@ -79,6 +79,23 @@ e.g.`docker run --gpus all -it -v /home/yukun:/app/diffusers/Global_DM yukunzhou
 
 The process will generate a `diffusion1.5`,`diffusion2`, and `sdxl` folder in `{Absolute_path}` path. The model weights will be saved there.
 
+
+3. Share model weights
+
+Only `pytorch_lora_weights.safetensors` in each folder and sub-checkpoint are needed. The other files should be deleted to ease file sharing.
+
+```
+├──checkpoint-1000
+    ├──pytorch_lora_weights.safetensors
+├──checkpoint-2000
+    ├──pytorch_lora_weights.safetensors
+├──checkpoint-3000
+    ├──pytorch_lora_weights.safetensors
+├──......
+├──pytorch_lora_weights.safetensors   
+``` 
+
+Please share the folders above through any storage platforms, such as Google Drive, Dropbox, Baidu Disk, etc.
 
 
 ### Citation
